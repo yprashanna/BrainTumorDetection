@@ -14,7 +14,7 @@ st.set_page_config(page_title="Brain Tumor Classifier", layout="centered")
 
 # ---------------- CONFIG ----------------
 # Replace these with your Drive file IDs (from the shareable links)
-MODEL_DRIVE_ID = "PUT_MODEL_DRIVE_ID_HERE"
+MODEL_DRIVE_ID = "1hrDdf2FuuTlt6XMvSPMtZj2GV_OuJVNC"
 CLASSES_DRIVE_ID = None  # optionally put the ID for classes.json; set to None if classes.json in repo
 
 # Local names used by the app
@@ -126,7 +126,7 @@ def gradcam_overlay(model, img_pil, target_class=None, upsample_size=(224,224)):
 
 # ---------------- UI ----------------
 st.title("🧠 Brain Tumor MRI Classifier — EfficientNet-B7")
-st.write("Upload an MRI image (jpg/png). Model is cached and loaded from Drive.")
+st.write("Upload an MRI image (jpg/png).")
 
 # load model & classes (cached)
 classes = load_classes()
