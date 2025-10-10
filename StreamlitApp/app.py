@@ -18,8 +18,10 @@ MODEL_DRIVE_ID = "1hrDdf2FuuTlt6XMvSPMtZj2GV_OuJVNC"
 CLASSES_DRIVE_ID = None  # optionally put the ID for classes.json; set to None if classes.json in repo
 
 # Local names used by the app
-MODELS_DIR = "models"
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+MODELS_DIR = os.path.join(APP_DIR, "models")
 os.makedirs(MODELS_DIR, exist_ok=True)
+
 MODEL_LOCAL = os.path.join(MODELS_DIR, "EfficientNet-B7.pth")
 CLASSES_LOCAL = os.path.join(MODELS_DIR, "classes.json")
 
